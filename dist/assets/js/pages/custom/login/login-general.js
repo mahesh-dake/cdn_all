@@ -63,7 +63,8 @@ var KTLogin = function() {
     						confirmButton: "btn font-weight-bold btn-light-primary"
     					}
 		            }).then(function() {
-						KTUtil.scrollTop();
+						var form = document.getElementById("kt_login_signin_submit");
+			    			form.submit();
 					});
 				} else {
 					swal.fire({
